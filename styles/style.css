@@ -1,0 +1,179 @@
+
+body {
+    --color1: #ffffff;
+    --color2: #cbc5c5;
+    --color3: #96edb6f3;
+    --color4: #ffffff;
+    --color5: #e69898;
+
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    /* --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1); */
+
+    /* --color1: hsla(45, 86%, 83%, 1);
+    --color2: hsla(135, 65%, 98%, 1);
+    --color3: hsla(315, 37%, 86%, 1);
+    --color4: hsla(45, 73%, 98%, 1);
+    --color5: hsla(224, 40%, 79%, 1); */
+    
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 15px;
+    --footer-height: 25px;
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color2);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #2222;
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--footer-height));
+}
+
+section {
+    background-color: var(--color5);
+    width: 1000px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+    border: solid 2px var(--color1);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.gutter-right {
+    margin-right: 20px;
+}
+
+.main-logo {
+    animation: pulse 5s infinite ease-in-out;
+}
+
+
+
+content {
+    width: 80%;
+}
+
+p {
+    margin: var(--gutter);
+}
+  
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+}
+.button:hover {
+    background-color: coral;
+
+}
+.result {
+    width: 100px;
+}
+  
+.calc-line {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+   
+}
+
+.color-ani {
+    background-color: #2222;
+    animation-name: color;
+    animation-duration: 1.3s;
+    animation-iteration-count: 3;
+}
+
+.color-ani2 {
+    background-color: #2222;
+    animation-name: color;
+    animation-duration: .5s;
+    animation-iteration-count: 6;
+}
+
+@keyframes color {
+    0% {
+      background-color: #2222;
+    }
+    12% {
+      background-color: #4285f4;
+    }
+    25% {
+        background-color: #a6b183;
+    }
+    37% {
+        background-color: #c4345f;
+    }
+    50% {
+        background-color: #90d2a5;
+    }
+    63% {
+        background-color: #bfcf0f;
+    }
+    75% {
+        background-color: #740ab6;
+    }
+    87% {
+        background-color: #f4425d;
+    }
+    100% {
+      background-color: rgba(34, 34, 34, 0.18) ;
+    }
+  }
+ /*( @keyframes pulse {
+    20% {
+      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+    }
+
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
+
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+      }
+
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
+
+  } */
